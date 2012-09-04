@@ -14,25 +14,22 @@
 		<auto/>
 		<summary/>
 	</entry>
-	<info>
-		<options auto="false" require="true"/>
-		<title type="text">Friend's Name</title>
-		<description/>
-		<collector type="EditText"/>
+	<info collector="ContactPicker">
+		<options require="true"/>
+		<description type="text">Choose your best friend~</description>
+		<title type="text">Click to Choose</title>
 	</info>
-	<info>
-		<options auto="false" require="false"/>
+	<info collector="TextConversation">
+		<description type="text">What you have done with the friend?</description>
 		<title type="text">The Action</title>
-		<collector type="EditText"/>
 	</info>
-	<info>
-		<options auto="true" require="false"/>
+	<info collector="TimeChooser">
+		<options auto="true"/>
 		<title type="text">Time</title>
-		<collector type="EditText"/>
+		<img filename="Clock.png"/>
 	</info>
-	<info>
-		<options auto="true" require="false"/>
+	<info collector="Geolocation">
+		<options auto="true"/>
 		<title type="text">Place</title>
-		<collector type="EditText"/>
 	</info>
 </action>
